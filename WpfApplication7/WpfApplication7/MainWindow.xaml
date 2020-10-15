@@ -1,0 +1,28 @@
+﻿<Window x:Name="Titl" x:Class="WpfApplication7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication7"
+        mc:Ignorable="d"
+        Title="Лабораторная работа №2. ИВТ-21В. Васякин К М" Height="350" Width="525">
+    <Grid Height="284" VerticalAlignment="Bottom">
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="10,71,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="comboBox_SelectionChanged">
+            <ComboBoxItem Background="Red" Content="red"/>
+            <ComboBoxItem Background="#FF00FF23" Content="green"/>
+            <ComboBoxItem Background="#FF002EFF" Content="blue"/>
+            <ComboBoxItem/>
+            <ComboBoxItem/>
+            <ComboBoxItem/>
+        </ComboBox>
+        <Button x:Name="Btn" Content="Сменить цвет" HorizontalAlignment="Left" Margin="431,71,0,0" VerticalAlignment="Top" Width="76" Click="button_Click"/>
+        <RadioButton x:Name="rb1" Content="Из списка" HorizontalAlignment="Right" Margin="0,41,436,0" VerticalAlignment="Top" Checked="radioButton_Checked"/>
+        <RadioButton x:Name="rb2" Content="По значениям" HorizontalAlignment="Left" Margin="272,41,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbr" HorizontalAlignment="Left" Height="23" Margin="272,77,0,0" TextWrapping="Wrap" Text="128" VerticalAlignment="Top" Width="120" TextChanged="textBox_TextChanged"/>
+        <TextBox x:Name="tbg" HorizontalAlignment="Left" Height="23" Margin="272,119,0,0" TextWrapping="Wrap" Text="250" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbb" HorizontalAlignment="Left" Height="23" Margin="272,164,0,0" TextWrapping="Wrap" Text="250" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="tbR" HorizontalAlignment="Left" Margin="217,80,0,0" TextWrapping="Wrap" Text="R" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tbG" HorizontalAlignment="Left" Margin="217,122,0,0" TextWrapping="Wrap" Text="G" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tbB" HorizontalAlignment="Left" Margin="217,167,0,0" TextWrapping="Wrap" Text="B" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
